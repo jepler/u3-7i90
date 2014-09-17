@@ -19,6 +19,7 @@ The board was designed in Eagle 7.1.  The board files may not be readable in ear
 Most of the assembly should be straightforward.  Two things to note:
 
  * You MUST use appropriate spacers between the two boards to keep the connectors well-aligned.  The 2mm connectors are fragile; I ruined them and had to rework the board, which was not a lot of fun.
+ * The connectors go on the top (owl) side, the surface-mount parts go on the bottom (blank) side.
  * I recommend that you work in this order:
   * Solder all items but the connectors
   * Insert the 2mm male headers into the odroid's female headers
