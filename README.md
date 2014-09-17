@@ -10,9 +10,7 @@ The TXB0104 level translator is used for voltage conversion between the ODROID (
 
 ## Design Files
 
-(to be added)
-
-The board was designed in Eagle 7.1.  The board files may not be readable in earlier versions.
+The board was designed in Eagle 6.6.  The board files may not be readable in earlier versions.
 
 ## Assembling and installing the board
 
@@ -67,4 +65,7 @@ cp arch/arm/boot/zImage ../zImage
 
 ## LinuxCNC
 
-Use LinuxCNC master branch.  Everything should be just about normal.
+Use LinuxCNC master branch configured for uspace.  Everything should be just
+about normal.
+
+Consider booting with isolcpus=3 to improve latency a bit.
