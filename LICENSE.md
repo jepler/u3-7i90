@@ -1,3 +1,7 @@
+NOTE: Some of the .lbr files bundled in this repository are offered under
+different licenses.  See those files for details.
+
+
 GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
 
