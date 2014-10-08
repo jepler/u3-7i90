@@ -63,6 +63,13 @@ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- ${extraversion:+EXTRAVERSION=$e
 cp arch/arm/boot/zImage ../zImage
 ```
 
+### Known problems
+
+The kernel crashes when it receives a byte on the serial terminal.  However,
+early boot messages can still be seen via the serial port if necessary, and
+of course you can intercept uboot and boot the original kernel if you really
+need to interact via the serial console.
+
 ## Misc files
 
 `misc-files` contains important files I've customized.
