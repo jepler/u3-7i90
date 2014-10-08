@@ -1,0 +1,1 @@
+KERNEL=="spidev*", SUBSYSTEM=="spidev", OWNER="jepler", MODE="0660"

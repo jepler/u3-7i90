@@ -1,0 +1,31 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+# Tweak the fan -- this makes it start at a silent speed
+# (and before fixing the dpms vs sensor problem, it made for
+# a silent fan instead of a loud one when the temperature stuck)
+echo 48 > /sys/devices/platform/odroidu2-fan/start_duty 
+echo 44 > /sys/devices/platform/odroidu2-fan/start_temp
+
+# Kill some powersaving...
+# To fix the fan / thermal sensor problem
+echo on > /sys/devices/platform/exynos4-hdmi/power/control
+
+# To improve spi latency
+echo on > /sys/devices/platform/exynos4210-spi.1/power/control
+echo on > /sys/devices/platform/samsung-idma/power/control
+
+# Don't blank the console
+TERM=linux setterm -blank 0 < /dev/tty0
+
+exit 0

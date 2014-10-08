@@ -63,6 +63,10 @@ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- ${extraversion:+EXTRAVERSION=$e
 cp arch/arm/boot/zImage ../zImage
 ```
 
+## Misc files
+
+`misc-files` contains important files I've customized.
+
 ## LinuxCNC
 
 Use LinuxCNC master branch configured for uspace.  Everything should be just
