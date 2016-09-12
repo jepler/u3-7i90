@@ -4,6 +4,9 @@ This repository will hold the design files for the level adaptor from ODROID U3 
 
 # The board
 
+<a href="https://oshpark.com/shared_projects/QzWVEFEG"><img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park"></img></a>
+(I do not receive any compensation from oshpark when you order my design)
+
 ## Theory
 
 The TXB0104 level translator is used for voltage conversion between the ODROID (1.8v I/O standard) and 7i90 (3.3v I/O standard).  I had success running at up to 40MHz, but by the TXB datasheet a safe rate is more like 30MHz.  (in any case, even at 30MHz, setup / cleanup time dominates SPI transaction time so choose a reliable rate rather than a fast one)
