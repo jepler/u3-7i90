@@ -2,6 +2,12 @@
 
 This repository will hold the design files for the level adaptor from ODROID U3 to Mesa 7i90, as well as instructions on building a Linux kernel for the ODROID with the necessary customizations.
 
+# Development status
+
+The author (@jepler) is not actively using or developing this project.
+Issues and pull requests are not likely to be acted on.
+I would be interested in passing this project to a new maintainer.
+
 # The board
 
 <a href="https://oshpark.com/shared_projects/QzWVEFEG"><img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park"></img></a>
